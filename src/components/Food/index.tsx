@@ -13,7 +13,7 @@ interface FoodProps{
 }
 
 interface FoodData{
-  food: FoodProps
+  food: FoodProps;
   handleEditFood: (food: FoodProps) =>{};
   handleDelete: (id: number) =>{};
 }
