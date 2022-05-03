@@ -9,13 +9,13 @@ interface FoodProps{
   description: string;
   price: number;
   available: boolean;
-  image: string,
+  image: string;
 }
 
 interface FoodData{
   food: FoodProps;
-  handleEditFood: (food: FoodProps) =>{};
-  handleDelete: (id: number) =>{};
+  handleEditFood: (food: FoodProps) =>void;
+  handleDelete: (id: number) =>void;
 }
 export function Food(  foodData  : FoodData){
 
@@ -40,7 +40,6 @@ export function Food(  foodData  : FoodData){
   return(
     <Container available={isAvailable}>
     <header>
-      console.log(food.image)
       <img src={food.image} alt={food.name} />
     </header>
     <section className="body">

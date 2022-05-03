@@ -21,7 +21,6 @@ class ModalEditFood extends Component {
 
   render() {
     const { isOpen, setIsOpen, editingFood } = this.props;
-
     return (
       <Modal isOpen={isOpen} setIsOpen={setIsOpen}>
         <Form ref={this.formRef} onSubmit={this.handleSubmit} initialData={editingFood}>
